@@ -22,8 +22,6 @@
 		6AC5131D17A7A044008CFDF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A9B4AEF5D1C722ABBCC5 /* Foundation.framework */; };
 		6AC5131E17A7A044008CFDF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A7F3BF36146EE3A973F3 /* UIKit.framework */; };
 		6AC5132417A7A044008CFDF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AC5132217A7A044008CFDF7 /* InfoPlist.strings */; };
-		6AC5132617A7A044008CFDF7 /* ApproximateDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5132517A7A044008CFDF7 /* ApproximateDateTests.m */; };
-		6AC5133017A7A3A2008CFDF7 /* ApproximateDateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5132F17A7A3A2008CFDF7 /* ApproximateDateSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +53,7 @@
 		6AC5131B17A7A044008CFDF7 /* ApproximateDateTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApproximateDateTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AC5132117A7A044008CFDF7 /* ApproximateDateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApproximateDateTests-Info.plist"; sourceTree = "<group>"; };
 		6AC5132317A7A044008CFDF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6AC5132517A7A044008CFDF7 /* ApproximateDateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApproximateDateTests.m; sourceTree = "<group>"; };
 		6AC5132717A7A044008CFDF7 /* ApproximateDateTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApproximateDateTests-Prefix.pch"; sourceTree = "<group>"; };
-		6AC5132F17A7A3A2008CFDF7 /* ApproximateDateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproximateDateSpec.m; sourceTree = "<group>"; };
 		A267DAF6573C424CB25F3594 /* Pods-ApproximateDateTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApproximateDateTests.xcconfig"; path = "Pods/Pods-ApproximateDateTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		CF7440F018574D9BB27E9D3A /* libPods-ApproximateDateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ApproximateDateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,8 +143,6 @@
 		6AC5131F17A7A044008CFDF7 /* ApproximateDateTests */ = {
 			isa = PBXGroup;
 			children = (
-				6AC5132F17A7A3A2008CFDF7 /* ApproximateDateSpec.m */,
-				6AC5132517A7A044008CFDF7 /* ApproximateDateTests.m */,
 				6AC5132017A7A044008CFDF7 /* Supporting Files */,
 			);
 			path = ApproximateDateTests;
@@ -305,8 +299,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC5132617A7A044008CFDF7 /* ApproximateDateTests.m in Sources */,
-				6AC5133017A7A3A2008CFDF7 /* ApproximateDateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
