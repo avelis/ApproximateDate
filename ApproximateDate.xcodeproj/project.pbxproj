@@ -22,6 +22,8 @@
 		6AC512CE17A7952D008CFDF7 /* ApproximateDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A4A490CDC0A2CFF2362B /* ApproximateDate.m */; };
 		6AC512D017A79587008CFDF7 /* ApproximateDate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7AE106536E652E04A56C9 /* ApproximateDate.h */; };
 		6AC512D117A7958F008CFDF7 /* ADAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A0FBBEAFBFA3C820DD23 /* ADAppDelegate.h */; };
+		6AC512D217A79637008CFDF7 /* ApproximateDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A4A490CDC0A2CFF2362B /* ApproximateDate.m */; };
+		6AC512D317A7967E008CFDF7 /* ApproximateDate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7AE106536E652E04A56C9 /* ApproximateDate.h */; };
 		B22F5C4108DF4AB5B8236BA1 /* libPods-ApproximateDateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7440F018574D9BB27E9D3A /* libPods-ApproximateDateTests.a */; };
 /* End PBXBuildFile section */
 
@@ -281,6 +283,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC512D317A7967E008CFDF7 /* ApproximateDate.h in Sources */,
+				6AC512D217A79637008CFDF7 /* ApproximateDate.m in Sources */,
 				6A37BCAB17A78335002D5131 /* ApproximateDateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
