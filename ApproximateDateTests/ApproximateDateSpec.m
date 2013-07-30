@@ -38,16 +38,23 @@ describe(@"ApproximateDate", ^{
     
     context(@"when approximating a date", ^{
 
-        beforeEach(^{ // Occurs before each enclosed "it"
-            date = [NSDate date];
-        });
         context(@"and the date difference is less than 5 seconds", ^{
-            
+            date = [NSDate date];
+
             it(@"should return 'Just moments ago.'", ^{
                 NSString *value = [systemUnderTest approximate:date];
                 [[value should] containString:@"Just moments ago." options:NSCaseInsensitiveSearch];
             });
             
+        });
+
+        context(@"and the date difference is less than a minute", ^{
+
+            it(@"should return 'X seconds ago.'", ^{
+                NSString *value = [systemUnderTest approximate:date];
+                [[value should] containString:@"X seconds ago." options:NSCaseInsensitiveSearch];
+            });
+
         });
     });
 });
