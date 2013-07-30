@@ -10,6 +10,6 @@
 
 }
 - (NSString *)approximate:(NSDate *)date {
-    return @"";
+    return @"Just moments ago.";
 }
 @end

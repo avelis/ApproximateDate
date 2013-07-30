@@ -210,7 +210,7 @@
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
 					6AC5133917A7AFED008CFDF7 = {
-						TestTargetID = 3FC7A7F754490C1DD52F814B;
+						TestTargetID = 3FC7A7F754490C1DD52F814B /* ApproximateDate */;
 					};
 				};
 			};

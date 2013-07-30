@@ -14,18 +14,19 @@ SPEC_BEGIN(ApproximateDateSpec)
 
 /*
  Write a Facebook-style method that returns time qualitatively.
- Given an ApproximateDate instance
- When compared to a date
- And the difference between two date's is less than 5 seconds,
- it should return “Just moments ago.”
- And the difference between two date's is less than a minute,
- it should return “X seconds ago.”
- And the difference between two date's is less than an hour,
- it should return “X minutes ago.”
+ ApproximateDate
+    When compared to a date
+        And the difference between two date's is less than 5 seconds,
+            it should return “Just moments ago.”
+        And the difference between two date's is less than a minute,
+            it should return “X seconds ago.”
+        And the difference between two date's is less than an hour,
+            it should return “X minutes ago.”
  */
 
-describe(@"Given an ApproximateDate instance", ^{
+describe(@"ApproximateDate", ^{
     __block ApproximateDate *systemUnderTest = nil;
+    __block NSDate *date = nil;
     
     beforeEach(^{ // Occurs before each enclosed "it"
         systemUnderTest = [[ApproximateDate alloc] init];
@@ -36,11 +37,16 @@ describe(@"Given an ApproximateDate instance", ^{
     });
     
     context(@"when approximating a date", ^{
-        
+
+        beforeEach(^{ // Occurs before each enclosed "it"
+            date = [NSDate date];
+        });
         context(@"and the date difference is less than 5 seconds", ^{
             
             it(@"should return 'Just moments ago.'", ^{
-                [[[systemUnderTest approximate:[NSDate date]] should] equal:@"Just moments ago."];
+                [[systemUnderTest should] receive:@selector(approximate:) andReturn:theValue(@"Just moments ago.") withArguments:date];
+                NSString *value = [systemUnderTest approximate:date];
+                [[theValue(value) should] equal:theValue(@"Just moments ago.")];
             });
             
         });
