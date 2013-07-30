@@ -44,9 +44,8 @@ describe(@"ApproximateDate", ^{
         context(@"and the date difference is less than 5 seconds", ^{
             
             it(@"should return 'Just moments ago.'", ^{
-                [[systemUnderTest should] receive:@selector(approximate:) andReturn:theValue(@"Just moments ago.") withArguments:date];
                 NSString *value = [systemUnderTest approximate:date];
-                [[theValue(value) should] equal:theValue(@"Just moments ago.")];
+                [[value should] containString:@"Just moments ago." options:NSCaseInsensitiveSearch];
             });
             
         });
