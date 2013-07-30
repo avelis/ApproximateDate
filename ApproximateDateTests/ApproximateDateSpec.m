@@ -7,6 +7,7 @@
 //
 
 #import "Kiwi.h"
+#import "ApproximateDate.h"
 
 SPEC_BEGIN(ApproximateDateSpec)
 

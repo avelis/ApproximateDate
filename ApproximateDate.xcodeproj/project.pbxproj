@@ -13,6 +13,7 @@
 		3FC7A7827E430446EBCBB025 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7AA18E319FDBA2B894342 /* InfoPlist.strings */; };
 		3FC7AA7F54315E122EFE8001 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A81EBAC6CC33EE065AAD /* CoreGraphics.framework */; };
 		3FC7AAEA150399F300D19089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A407D63D4E7482CF4799 /* main.m */; };
+		3FC7AAF3367546D652F5D49A /* ApproximateDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A6BD753BB034DEA50342 /* ApproximateDate.m */; };
 		3FC7ABC94B9CBC9587C3090E /* ADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A2639CD0BD5E60DFFEA3 /* ADAppDelegate.m */; };
 		3FC7AC5E2A22E7E6A7DA634C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A7F3BF36146EE3A973F3 /* UIKit.framework */; };
 		3FC7ADE1B04D1EB39267153A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A24FE242C4AD60305F6A /* XCTest.framework */; };
@@ -41,10 +42,12 @@
 		3FC7A32151053942C938C1F8 /* ApproximateDate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApproximateDate-Prefix.pch"; sourceTree = "<group>"; };
 		3FC7A407D63D4E7482CF4799 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3FC7A5C5AB0AEDC7B4542C31 /* ApproximateDateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ApproximateDateTests-Info.plist"; sourceTree = "<group>"; };
+		3FC7A6BD753BB034DEA50342 /* ApproximateDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ApproximateDate.m; path = ApproximateDate/ApproximateDate.m; sourceTree = SOURCE_ROOT; };
 		3FC7A7F3BF36146EE3A973F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3FC7A81EBAC6CC33EE065AAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3FC7A9B4AEF5D1C722ABBCC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FC7AAD9B5205F251DF06958 /* ApproximateDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApproximateDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FC7AD8413DC4401B6906CF8 /* ApproximateDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ApproximateDate.h; path = ApproximateDate/ApproximateDate.h; sourceTree = SOURCE_ROOT; };
 		3FC7ADFF825CE8137B68636C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FC7AF03C41994D72FEE5D08 /* ApproximateDateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApproximateDateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC7AFDC8234591D606E50EB /* ApproximateDate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ApproximateDate-Info.plist"; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 			children = (
 				3FC7A96CE541B11D566F06F1 /* Supporting Files */,
 				6A37BCAA17A78335002D5131 /* ApproximateDateSpec.m */,
+				3FC7A6BD753BB034DEA50342 /* ApproximateDate.m */,
+				3FC7AD8413DC4401B6906CF8 /* ApproximateDate.h */,
 			);
 			path = ApproximateDateTests;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			files = (
 				3FC7AAEA150399F300D19089 /* main.m in Sources */,
 				3FC7ABC94B9CBC9587C3090E /* ADAppDelegate.m in Sources */,
+				3FC7AAF3367546D652F5D49A /* ApproximateDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
