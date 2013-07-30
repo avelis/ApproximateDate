@@ -14,18 +14,20 @@
 		3FC7AAEA150399F300D19089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A407D63D4E7482CF4799 /* main.m */; };
 		3FC7ABC94B9CBC9587C3090E /* ADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A2639CD0BD5E60DFFEA3 /* ADAppDelegate.m */; };
 		3FC7AC5E2A22E7E6A7DA634C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A7F3BF36146EE3A973F3 /* UIKit.framework */; };
-		5C6A1F13AF124FBF812D6BF1 /* libPods-ApproximateDateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7440F018574D9BB27E9D3A /* libPods-ApproximateDateTests.a */; };
+		4873B32D0D704E4A8C9CA8C9 /* libPods-ApproximateDateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7440F018574D9BB27E9D3A /* libPods-ApproximateDateTests.a */; };
+		6A9ED1B917A7B08D00F23F80 /* ApproximateDateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9ED1B717A7B08D00F23F80 /* ApproximateDateSpec.m */; };
 		6AC512CE17A7952D008CFDF7 /* ApproximateDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A4A490CDC0A2CFF2362B /* ApproximateDate.m */; };
 		6AC512D017A79587008CFDF7 /* ApproximateDate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7AE106536E652E04A56C9 /* ApproximateDate.h */; };
 		6AC512D117A7958F008CFDF7 /* ADAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A0FBBEAFBFA3C820DD23 /* ADAppDelegate.h */; };
-		6AC5131C17A7A044008CFDF7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC512D917A79D83008CFDF7 /* SenTestingKit.framework */; };
-		6AC5131D17A7A044008CFDF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A9B4AEF5D1C722ABBCC5 /* Foundation.framework */; };
-		6AC5131E17A7A044008CFDF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A7F3BF36146EE3A973F3 /* UIKit.framework */; };
-		6AC5132417A7A044008CFDF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AC5132217A7A044008CFDF7 /* InfoPlist.strings */; };
+		6AC5133B17A7AFED008CFDF7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC512D917A79D83008CFDF7 /* SenTestingKit.framework */; };
+		6AC5133C17A7AFED008CFDF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A9B4AEF5D1C722ABBCC5 /* Foundation.framework */; };
+		6AC5133D17A7AFED008CFDF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A7F3BF36146EE3A973F3 /* UIKit.framework */; };
+		6AC5134317A7AFED008CFDF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AC5134117A7AFED008CFDF7 /* InfoPlist.strings */; };
+		6AC5134517A7AFED008CFDF7 /* ApproximateDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5134417A7AFED008CFDF7 /* ApproximateDateTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6AC5132817A7A044008CFDF7 /* PBXContainerItemProxy */ = {
+		6AC5134717A7AFEE008CFDF7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3FC7A5F77AE27AE55B555B3C /* Project object */;
 			proxyType = 1;
@@ -49,11 +51,13 @@
 		3FC7AAD9B5205F251DF06958 /* ApproximateDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApproximateDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FC7AE106536E652E04A56C9 /* ApproximateDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproximateDate.h; sourceTree = "<group>"; };
 		3FC7AFDC8234591D606E50EB /* ApproximateDate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ApproximateDate-Info.plist"; sourceTree = "<group>"; };
+		6A9ED1B717A7B08D00F23F80 /* ApproximateDateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproximateDateSpec.m; sourceTree = "<group>"; };
 		6AC512D917A79D83008CFDF7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		6AC5131B17A7A044008CFDF7 /* ApproximateDateTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApproximateDateTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6AC5132117A7A044008CFDF7 /* ApproximateDateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApproximateDateTests-Info.plist"; sourceTree = "<group>"; };
-		6AC5132317A7A044008CFDF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6AC5132717A7A044008CFDF7 /* ApproximateDateTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApproximateDateTests-Prefix.pch"; sourceTree = "<group>"; };
+		6AC5133A17A7AFED008CFDF7 /* ApproximateDateTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApproximateDateTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC5134017A7AFED008CFDF7 /* ApproximateDateTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ApproximateDateTests-Info.plist"; sourceTree = "<group>"; };
+		6AC5134217A7AFED008CFDF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6AC5134417A7AFED008CFDF7 /* ApproximateDateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApproximateDateTests.m; sourceTree = "<group>"; };
+		6AC5134617A7AFED008CFDF7 /* ApproximateDateTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApproximateDateTests-Prefix.pch"; sourceTree = "<group>"; };
 		A267DAF6573C424CB25F3594 /* Pods-ApproximateDateTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApproximateDateTests.xcconfig"; path = "Pods/Pods-ApproximateDateTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		CF7440F018574D9BB27E9D3A /* libPods-ApproximateDateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ApproximateDateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,14 +73,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6AC5131817A7A044008CFDF7 /* Frameworks */ = {
+		6AC5133717A7AFED008CFDF7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC5131C17A7A044008CFDF7 /* SenTestingKit.framework in Frameworks */,
-				6AC5131E17A7A044008CFDF7 /* UIKit.framework in Frameworks */,
-				6AC5131D17A7A044008CFDF7 /* Foundation.framework in Frameworks */,
-				5C6A1F13AF124FBF812D6BF1 /* libPods-ApproximateDateTests.a in Frameworks */,
+				6AC5133B17A7AFED008CFDF7 /* SenTestingKit.framework in Frameworks */,
+				6AC5133D17A7AFED008CFDF7 /* UIKit.framework in Frameworks */,
+				6AC5133C17A7AFED008CFDF7 /* Foundation.framework in Frameworks */,
+				4873B32D0D704E4A8C9CA8C9 /* libPods-ApproximateDateTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +90,7 @@
 		3FC7A0076280F54F3F909265 = {
 			isa = PBXGroup;
 			children = (
-				6AC5131F17A7A044008CFDF7 /* ApproximateDateTests */,
+				6AC5133E17A7AFED008CFDF7 /* ApproximateDateTests */,
 				3FC7A9DE6A29A9519E455667 /* Products */,
 				3FC7A68AE6DEDF5D582F7BBE /* Frameworks */,
 				3FC7AB2834F7D1E8BD691746 /* ApproximateDate */,
@@ -122,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				3FC7AAD9B5205F251DF06958 /* ApproximateDate.app */,
-				6AC5131B17A7A044008CFDF7 /* ApproximateDateTests.octest */,
+				6AC5133A17A7AFED008CFDF7 /* ApproximateDateTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,20 +144,22 @@
 			path = ApproximateDate;
 			sourceTree = "<group>";
 		};
-		6AC5131F17A7A044008CFDF7 /* ApproximateDateTests */ = {
+		6AC5133E17A7AFED008CFDF7 /* ApproximateDateTests */ = {
 			isa = PBXGroup;
 			children = (
-				6AC5132017A7A044008CFDF7 /* Supporting Files */,
+				6AC5134417A7AFED008CFDF7 /* ApproximateDateTests.m */,
+				6AC5133F17A7AFED008CFDF7 /* Supporting Files */,
+				6A9ED1B717A7B08D00F23F80 /* ApproximateDateSpec.m */,
 			);
 			path = ApproximateDateTests;
 			sourceTree = "<group>";
 		};
-		6AC5132017A7A044008CFDF7 /* Supporting Files */ = {
+		6AC5133F17A7AFED008CFDF7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6AC5132117A7A044008CFDF7 /* ApproximateDateTests-Info.plist */,
-				6AC5132217A7A044008CFDF7 /* InfoPlist.strings */,
-				6AC5132717A7A044008CFDF7 /* ApproximateDateTests-Prefix.pch */,
+				6AC5134017A7AFED008CFDF7 /* ApproximateDateTests-Info.plist */,
+				6AC5134117A7AFED008CFDF7 /* InfoPlist.strings */,
+				6AC5134617A7AFED008CFDF7 /* ApproximateDateTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -178,24 +184,24 @@
 			productReference = 3FC7AAD9B5205F251DF06958 /* ApproximateDate.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6AC5131A17A7A044008CFDF7 /* ApproximateDateTests */ = {
+		6AC5133917A7AFED008CFDF7 /* ApproximateDateTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6AC5132A17A7A044008CFDF7 /* Build configuration list for PBXNativeTarget "ApproximateDateTests" */;
+			buildConfigurationList = 6AC5134917A7AFEE008CFDF7 /* Build configuration list for PBXNativeTarget "ApproximateDateTests" */;
 			buildPhases = (
-				B3C34350388A4A6F9FE493BD /* Check Pods Manifest.lock */,
-				6AC5131717A7A044008CFDF7 /* Sources */,
-				6AC5131817A7A044008CFDF7 /* Frameworks */,
-				6AC5131917A7A044008CFDF7 /* Resources */,
-				C7C9FD0F95BF433DADDE3807 /* Copy Pods Resources */,
+				1225340333B94BC2A23B2CA3 /* Check Pods Manifest.lock */,
+				6AC5133617A7AFED008CFDF7 /* Sources */,
+				6AC5133717A7AFED008CFDF7 /* Frameworks */,
+				6AC5133817A7AFED008CFDF7 /* Resources */,
+				AE33E5D308F540C78DC1A6E4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6AC5132917A7A044008CFDF7 /* PBXTargetDependency */,
+				6AC5134817A7AFEE008CFDF7 /* PBXTargetDependency */,
 			);
 			name = ApproximateDateTests;
 			productName = ApproximateDateTests;
-			productReference = 6AC5131B17A7A044008CFDF7 /* ApproximateDateTests.octest */;
+			productReference = 6AC5133A17A7AFED008CFDF7 /* ApproximateDateTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +212,7 @@
 			attributes = {
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
-					6AC5131A17A7A044008CFDF7 = {
+					6AC5133917A7AFED008CFDF7 = {
 						TestTargetID = 3FC7A7F754490C1DD52F814B;
 					};
 				};
@@ -224,7 +230,7 @@
 			projectRoot = "";
 			targets = (
 				3FC7A7F754490C1DD52F814B /* ApproximateDate */,
-				6AC5131A17A7A044008CFDF7 /* ApproximateDateTests */,
+				6AC5133917A7AFED008CFDF7 /* ApproximateDateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,18 +245,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6AC5131917A7A044008CFDF7 /* Resources */ = {
+		6AC5133817A7AFED008CFDF7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AC5132417A7A044008CFDF7 /* InfoPlist.strings in Resources */,
+				6AC5134317A7AFED008CFDF7 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B3C34350388A4A6F9FE493BD /* Check Pods Manifest.lock */ = {
+		1225340333B94BC2A23B2CA3 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,7 +271,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C7C9FD0F95BF433DADDE3807 /* Copy Pods Resources */ = {
+		AE33E5D308F540C78DC1A6E4 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,20 +301,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6AC5131717A7A044008CFDF7 /* Sources */ = {
+		6AC5133617A7AFED008CFDF7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC5134517A7AFED008CFDF7 /* ApproximateDateTests.m in Sources */,
+				6A9ED1B917A7B08D00F23F80 /* ApproximateDateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6AC5132917A7A044008CFDF7 /* PBXTargetDependency */ = {
+		6AC5134817A7AFEE008CFDF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3FC7A7F754490C1DD52F814B /* ApproximateDate */;
-			targetProxy = 6AC5132817A7A044008CFDF7 /* PBXContainerItemProxy */;
+			targetProxy = 6AC5134717A7AFEE008CFDF7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -321,10 +329,10 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6AC5132217A7A044008CFDF7 /* InfoPlist.strings */ = {
+		6AC5134117A7AFED008CFDF7 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6AC5132317A7A044008CFDF7 /* en */,
+				6AC5134217A7AFED008CFDF7 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -430,10 +438,11 @@
 			};
 			name = Debug;
 		};
-		6AC5132B17A7A044008CFDF7 /* Release */ = {
+		6AC5134A17A7AFEE008CFDF7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A267DAF6573C424CB25F3594 /* Pods-ApproximateDateTests.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ApproximateDate.app/ApproximateDate";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -444,14 +453,16 @@
 				INFOPLIST_FILE = "ApproximateDateTests/ApproximateDateTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
-		6AC5132C17A7A044008CFDF7 /* Debug */ = {
+		6AC5134B17A7AFEE008CFDF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A267DAF6573C424CB25F3594 /* Pods-ApproximateDateTests.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ApproximateDate.app/ApproximateDate";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -466,6 +477,7 @@
 				INFOPLIST_FILE = "ApproximateDateTests/ApproximateDateTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -491,11 +503,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6AC5132A17A7A044008CFDF7 /* Build configuration list for PBXNativeTarget "ApproximateDateTests" */ = {
+		6AC5134917A7AFEE008CFDF7 /* Build configuration list for PBXNativeTarget "ApproximateDateTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6AC5132B17A7A044008CFDF7 /* Release */,
-				6AC5132C17A7A044008CFDF7 /* Debug */,
+				6AC5134A17A7AFEE008CFDF7 /* Release */,
+				6AC5134B17A7AFEE008CFDF7 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
