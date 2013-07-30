@@ -14,6 +14,7 @@
 		3FC7AAEA150399F300D19089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A407D63D4E7482CF4799 /* main.m */; };
 		3FC7ABC94B9CBC9587C3090E /* ADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A2639CD0BD5E60DFFEA3 /* ADAppDelegate.m */; };
 		3FC7AC5E2A22E7E6A7DA634C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A7F3BF36146EE3A973F3 /* UIKit.framework */; };
+		5C6A1F13AF124FBF812D6BF1 /* libPods-ApproximateDateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7440F018574D9BB27E9D3A /* libPods-ApproximateDateTests.a */; };
 		6AC512CE17A7952D008CFDF7 /* ApproximateDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A4A490CDC0A2CFF2362B /* ApproximateDate.m */; };
 		6AC512D017A79587008CFDF7 /* ApproximateDate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7AE106536E652E04A56C9 /* ApproximateDate.h */; };
 		6AC512D117A7958F008CFDF7 /* ADAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A0FBBEAFBFA3C820DD23 /* ADAppDelegate.h */; };
@@ -22,6 +23,7 @@
 		6AC5131E17A7A044008CFDF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A7F3BF36146EE3A973F3 /* UIKit.framework */; };
 		6AC5132417A7A044008CFDF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AC5132217A7A044008CFDF7 /* InfoPlist.strings */; };
 		6AC5132617A7A044008CFDF7 /* ApproximateDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5132517A7A044008CFDF7 /* ApproximateDateTests.m */; };
+		6AC5133017A7A3A2008CFDF7 /* ApproximateDateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC5132F17A7A3A2008CFDF7 /* ApproximateDateSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,7 @@
 		6AC5132317A7A044008CFDF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6AC5132517A7A044008CFDF7 /* ApproximateDateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApproximateDateTests.m; sourceTree = "<group>"; };
 		6AC5132717A7A044008CFDF7 /* ApproximateDateTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApproximateDateTests-Prefix.pch"; sourceTree = "<group>"; };
+		6AC5132F17A7A3A2008CFDF7 /* ApproximateDateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproximateDateSpec.m; sourceTree = "<group>"; };
 		A267DAF6573C424CB25F3594 /* Pods-ApproximateDateTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApproximateDateTests.xcconfig"; path = "Pods/Pods-ApproximateDateTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		CF7440F018574D9BB27E9D3A /* libPods-ApproximateDateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ApproximateDateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +80,7 @@
 				6AC5131C17A7A044008CFDF7 /* SenTestingKit.framework in Frameworks */,
 				6AC5131E17A7A044008CFDF7 /* UIKit.framework in Frameworks */,
 				6AC5131D17A7A044008CFDF7 /* Foundation.framework in Frameworks */,
+				5C6A1F13AF124FBF812D6BF1 /* libPods-ApproximateDateTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,7 @@
 		6AC5131F17A7A044008CFDF7 /* ApproximateDateTests */ = {
 			isa = PBXGroup;
 			children = (
+				6AC5132F17A7A3A2008CFDF7 /* ApproximateDateSpec.m */,
 				6AC5132517A7A044008CFDF7 /* ApproximateDateTests.m */,
 				6AC5132017A7A044008CFDF7 /* Supporting Files */,
 			);
@@ -183,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AC5132A17A7A044008CFDF7 /* Build configuration list for PBXNativeTarget "ApproximateDateTests" */;
 			buildPhases = (
+				B3C34350388A4A6F9FE493BD /* Check Pods Manifest.lock */,
 				6AC5131717A7A044008CFDF7 /* Sources */,
 				6AC5131817A7A044008CFDF7 /* Frameworks */,
 				6AC5131917A7A044008CFDF7 /* Resources */,
+				C7C9FD0F95BF433DADDE3807 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +255,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B3C34350388A4A6F9FE493BD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7C9FD0F95BF433DADDE3807 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ApproximateDateTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3FC7ADE8EEE9FCCAD05A9F58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -266,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AC5132617A7A044008CFDF7 /* ApproximateDateTests.m in Sources */,
+				6AC5133017A7A3A2008CFDF7 /* ApproximateDateSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +440,7 @@
 		};
 		6AC5132B17A7A044008CFDF7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A267DAF6573C424CB25F3594 /* Pods-ApproximateDateTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -416,6 +458,7 @@
 		};
 		6AC5132C17A7A044008CFDF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A267DAF6573C424CB25F3594 /* Pods-ApproximateDateTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -463,6 +506,7 @@
 				6AC5132C17A7A044008CFDF7 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
