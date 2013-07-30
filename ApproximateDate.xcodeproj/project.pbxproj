@@ -10,7 +10,6 @@
 		3FC7A07E94B09CB43EC10F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A9B4AEF5D1C722ABBCC5 /* Foundation.framework */; };
 		3FC7A139CA57F934E5BF3923 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7A5604CF485517BE5465C /* InfoPlist.strings */; };
 		3FC7A4B6C64545F0D62FBD1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7A1C12DF4629892768312 /* Images.xcassets */; };
-		3FC7A6D6F599A869629496BC /* ApproximateDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A4A490CDC0A2CFF2362B /* ApproximateDate.m */; };
 		3FC7A7827E430446EBCBB025 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7AA18E319FDBA2B894342 /* InfoPlist.strings */; };
 		3FC7AA7F54315E122EFE8001 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A81EBAC6CC33EE065AAD /* CoreGraphics.framework */; };
 		3FC7AAEA150399F300D19089 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A407D63D4E7482CF4799 /* main.m */; };
@@ -20,6 +19,9 @@
 		3FC7AE1607A40798033E6010 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A7F3BF36146EE3A973F3 /* UIKit.framework */; };
 		3FC7AE4939ABC471AB560E3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A9B4AEF5D1C722ABBCC5 /* Foundation.framework */; };
 		6A37BCAB17A78335002D5131 /* ApproximateDateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A37BCAA17A78335002D5131 /* ApproximateDateSpec.m */; };
+		6AC512CE17A7952D008CFDF7 /* ApproximateDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A4A490CDC0A2CFF2362B /* ApproximateDate.m */; };
+		6AC512D017A79587008CFDF7 /* ApproximateDate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7AE106536E652E04A56C9 /* ApproximateDate.h */; };
+		6AC512D117A7958F008CFDF7 /* ADAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A0FBBEAFBFA3C820DD23 /* ADAppDelegate.h */; };
 		B22F5C4108DF4AB5B8236BA1 /* libPods-ApproximateDateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7440F018574D9BB27E9D3A /* libPods-ApproximateDateTests.a */; };
 /* End PBXBuildFile section */
 
@@ -287,9 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC512D117A7958F008CFDF7 /* ADAppDelegate.h in Sources */,
+				6AC512D017A79587008CFDF7 /* ApproximateDate.h in Sources */,
+				6AC512CE17A7952D008CFDF7 /* ApproximateDate.m in Sources */,
 				3FC7AAEA150399F300D19089 /* main.m in Sources */,
 				3FC7ABC94B9CBC9587C3090E /* ADAppDelegate.m in Sources */,
-				3FC7A6D6F599A869629496BC /* ApproximateDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
