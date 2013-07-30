@@ -9,4 +9,7 @@
 @implementation ApproximateDate {
 
 }
+- (NSString *)approximate:(NSDate *)date {
+    return @"";
+}
 @end

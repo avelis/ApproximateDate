@@ -7,4 +7,5 @@
 
 
 @interface ApproximateDate : NSDate
+- (NSString *)approximate:(NSDate *)date;
 @end

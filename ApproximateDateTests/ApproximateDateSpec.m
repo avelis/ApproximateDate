@@ -24,7 +24,7 @@ SPEC_BEGIN(ApproximateDateSpec)
  */
 
 describe(@"Given an ApproximateDate instance", ^{
-    __block id systemUnderTest = nil;
+    __block ApproximateDate *systemUnderTest = nil;
 
     beforeEach(^{ // Occurs before each enclosed "it"
         systemUnderTest = [[ApproximateDate alloc] init];
@@ -34,11 +34,12 @@ describe(@"Given an ApproximateDate instance", ^{
         [systemUnderTest shouldNotBeNil];
     });
 
-    context(@"when comparing a date", ^{
+    context(@"when approximating a date", ^{
 
         context(@"and the date difference is less than 5 seconds", ^{
 
-            pending(@"should return 'Just moments ago.'", ^{
+            it(@"should return 'Just moments ago.'", ^{
+                [[[systemUnderTest approximate:[NSDate date]] should] equal:@"Just moments ago."];
             });
 
         });
