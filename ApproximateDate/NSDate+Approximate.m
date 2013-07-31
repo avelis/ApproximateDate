@@ -14,13 +14,16 @@
 - (NSString *)approximate:(NSDate *)date {
     NSTimeInterval interval = [self timeIntervalSinceDate:date];
     interval = floor(interval);
+    NSString *approximate;
     if(interval >= 0.0f && interval <= 5.0f) {
-        return @"Just moments ago.";
-    } if(interval >= 5.0f && interval <= 60.0f) {
-        return [NSString stringWithFormat:@"%i seconds ago.", (int) interval];
+        approximate = @"Just moments ago.";
+    } else if(interval >= 5.0f && interval <= 60.0f) {
+        approximate = [NSString stringWithFormat:@"%i seconds ago.", (int) interval];
     } else {
-        return [NSString stringWithFormat:@"%i minutes ago.", (int) floor(interval / 60)];
+        approximate = [NSString stringWithFormat:@"%i minutes ago.", (int) floor(interval / 60)];
     }
+
+    return approximate;
 }
 
 @end
