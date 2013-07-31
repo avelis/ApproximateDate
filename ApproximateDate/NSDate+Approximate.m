@@ -15,6 +15,7 @@
     NSTimeInterval interval = [self timeIntervalSinceDate:date];
     interval = floor(interval);
     NSString *approximate;
+
     if(interval >= 0.0f && interval <= 5.0f) {
         approximate = @"Just moments ago.";
     } else if(interval >= 5.0f && interval <= 60.0f) {
