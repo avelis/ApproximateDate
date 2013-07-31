@@ -29,9 +29,9 @@ describe(@"ApproximateDate", ^{
     __block NSDate *date = nil;
 
 
-    context(@"when approximating a date", ^{
+    context(@"when approximating time", ^{
 
-        context(@"and the date difference is less than 5 seconds", ^{
+        context(@"with a time difference less than 5 seconds", ^{
 
             it(@"should return 'Just moments ago.'", ^{
                 date = [NSDate date];
@@ -42,15 +42,17 @@ describe(@"ApproximateDate", ^{
 
         });
 
-        context(@"and the date difference is less than a minute", ^{
+        context(@"with a time difference less than a minute", ^{
 
-            it(@"should return 'X seconds ago.'", ^{
-                date = [[NSDate date] dateByAddingTimeInterval:-15.0];
-                systemUnderTest = [NSDate date];
-                NSString *value = [systemUnderTest approximate:date];
-                [[value should] containString:@"X seconds ago." options:NSCaseInsensitiveSearch];
+            context(@"and the time difference is 15 seconds", ^{
+
+                it(@"should return '15 seconds ago.'", ^{
+                    date = [[NSDate date] dateByAddingTimeInterval:-15.0];
+                    systemUnderTest = [NSDate date];
+                    NSString *value = [systemUnderTest approximate:date];
+                    [[value should] containString:@"15 seconds ago." options:NSCaseInsensitiveSearch];
+                });
             });
-
         });
     });
 });
