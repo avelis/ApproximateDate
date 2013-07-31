@@ -7,7 +7,7 @@
 //
 
 #import "Kiwi.h"
-#import "ApproximateDate.h"
+#import "NSDate+Approximate.h"
 
 
 SPEC_BEGIN(ApproximateDateSpec)
@@ -25,11 +25,11 @@ SPEC_BEGIN(ApproximateDateSpec)
  */
 
 describe(@"ApproximateDate", ^{
-    __block ApproximateDate *systemUnderTest = nil;
+    __block NSDate *systemUnderTest = nil;
     __block NSDate *date = nil;
     
     beforeEach(^{ // Occurs before each enclosed "it"
-        systemUnderTest = [[ApproximateDate alloc] init];
+        systemUnderTest = [NSDate date];
     });
     
     specify(^{

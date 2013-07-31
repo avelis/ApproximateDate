@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FC7A07E94B09CB43EC10F55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A9B4AEF5D1C722ABBCC5 /* Foundation.framework */; };
+		3FC7A261B112A469A5EB2F52 /* NSDate+Approximate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A180146DA7A04AC8F1BF /* NSDate+Approximate.m */; };
 		3FC7A4B6C64545F0D62FBD1F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7A1C12DF4629892768312 /* Images.xcassets */; };
 		3FC7A7827E430446EBCBB025 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FC7AA18E319FDBA2B894342 /* InfoPlist.strings */; };
 		3FC7AA7F54315E122EFE8001 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A81EBAC6CC33EE065AAD /* CoreGraphics.framework */; };
@@ -16,8 +17,6 @@
 		3FC7AC5E2A22E7E6A7DA634C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A7F3BF36146EE3A973F3 /* UIKit.framework */; };
 		4873B32D0D704E4A8C9CA8C9 /* libPods-ApproximateDateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7440F018574D9BB27E9D3A /* libPods-ApproximateDateTests.a */; };
 		6A9ED1B917A7B08D00F23F80 /* ApproximateDateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9ED1B717A7B08D00F23F80 /* ApproximateDateSpec.m */; };
-		6AC512CE17A7952D008CFDF7 /* ApproximateDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A4A490CDC0A2CFF2362B /* ApproximateDate.m */; };
-		6AC512D017A79587008CFDF7 /* ApproximateDate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7AE106536E652E04A56C9 /* ApproximateDate.h */; };
 		6AC512D117A7958F008CFDF7 /* ADAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 3FC7A0FBBEAFBFA3C820DD23 /* ADAppDelegate.h */; };
 		6AC5133B17A7AFED008CFDF7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC512D917A79D83008CFDF7 /* SenTestingKit.framework */; };
 		6AC5133C17A7AFED008CFDF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7A9B4AEF5D1C722ABBCC5 /* Foundation.framework */; };
@@ -37,18 +36,18 @@
 
 /* Begin PBXFileReference section */
 		3FC7A0FBBEAFBFA3C820DD23 /* ADAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADAppDelegate.h; sourceTree = "<group>"; };
+		3FC7A180146DA7A04AC8F1BF /* NSDate+Approximate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Approximate.m"; sourceTree = "<group>"; };
 		3FC7A1C12DF4629892768312 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images.xcassets; sourceTree = "<group>"; };
 		3FC7A23DB8705646FB5845C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3FC7A24FE242C4AD60305F6A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3FC7A2639CD0BD5E60DFFEA3 /* ADAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ADAppDelegate.m; sourceTree = "<group>"; };
 		3FC7A32151053942C938C1F8 /* ApproximateDate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ApproximateDate-Prefix.pch"; sourceTree = "<group>"; };
 		3FC7A407D63D4E7482CF4799 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3FC7A4A490CDC0A2CFF2362B /* ApproximateDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproximateDate.m; sourceTree = "<group>"; };
+		3FC7A5E94B5C3D493F690AD6 /* NSDate+Approximate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Approximate.h"; sourceTree = "<group>"; };
 		3FC7A7F3BF36146EE3A973F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3FC7A81EBAC6CC33EE065AAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3FC7A9B4AEF5D1C722ABBCC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3FC7AAD9B5205F251DF06958 /* ApproximateDate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApproximateDate.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FC7AE106536E652E04A56C9 /* ApproximateDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproximateDate.h; sourceTree = "<group>"; };
 		3FC7AFDC8234591D606E50EB /* ApproximateDate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "ApproximateDate-Info.plist"; sourceTree = "<group>"; };
 		6A9ED1B717A7B08D00F23F80 /* ApproximateDateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproximateDateSpec.m; sourceTree = "<group>"; };
 		6AC512D917A79D83008CFDF7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -136,8 +135,8 @@
 				3FC7A0FBBEAFBFA3C820DD23 /* ADAppDelegate.h */,
 				3FC7A2639CD0BD5E60DFFEA3 /* ADAppDelegate.m */,
 				3FC7A1C12DF4629892768312 /* Images.xcassets */,
-				3FC7AE106536E652E04A56C9 /* ApproximateDate.h */,
-				3FC7A4A490CDC0A2CFF2362B /* ApproximateDate.m */,
+				3FC7A180146DA7A04AC8F1BF /* NSDate+Approximate.m */,
+				3FC7A5E94B5C3D493F690AD6 /* NSDate+Approximate.h */,
 			);
 			path = ApproximateDate;
 			sourceTree = "<group>";
@@ -291,10 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AC512D117A7958F008CFDF7 /* ADAppDelegate.h in Sources */,
-				6AC512D017A79587008CFDF7 /* ApproximateDate.h in Sources */,
-				6AC512CE17A7952D008CFDF7 /* ApproximateDate.m in Sources */,
 				3FC7AAEA150399F300D19089 /* main.m in Sources */,
 				3FC7ABC94B9CBC9587C3090E /* ADAppDelegate.m in Sources */,
+				3FC7A261B112A469A5EB2F52 /* NSDate+Approximate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
