@@ -63,6 +63,29 @@ describe(@"ApproximateDate", ^{
                     [[value should] containString:@"45 seconds ago." options:NSCaseInsensitiveSearch];
                 });
             });
+        });
+
+        context(@"with a time difference less than an hour", ^{
+
+            context(@"and the time difference is 15 minutes", ^{
+
+                it(@"should return '15 minutes ago.'", ^{
+                    date = [[NSDate date] dateByAddingTimeInterval:-(15.0 * 60)];
+                    systemUnderTest = [NSDate date];
+                    NSString *value = [systemUnderTest approximate:date];
+                    [[value should] containString:@"15 minutes ago." options:NSCaseInsensitiveSearch];
+                });
+            });
+
+            context(@"and the time difference is 45 minutes", ^{
+
+                it(@"should return '45 minutes ago.'", ^{
+                    date = [[NSDate date] dateByAddingTimeInterval:-(45.0 * 60)];
+                    systemUnderTest = [NSDate date];
+                    NSString *value = [systemUnderTest approximate:date];
+                    [[value should] containString:@"45 minutes ago." options:NSCaseInsensitiveSearch];
+                });
+            });
 
         });
     });

@@ -16,8 +16,10 @@
     interval = floor(interval);
     if(interval >= 0.0f && interval <= 5.0f) {
         return @"Just moments ago.";
-    } else {
+    } if(interval >= 5.0f && interval <= 60.0f) {
         return [NSString stringWithFormat:@"%i seconds ago.", (int) interval];
+    } else {
+        return [NSString stringWithFormat:@"%i minutes ago.", (int) floor(interval / 60)];
     }
 }
 
