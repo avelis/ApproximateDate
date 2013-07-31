@@ -17,7 +17,7 @@
     if(interval >= 0.0f && interval <= 5.0f) {
         return @"Just moments ago.";
     } else {
-        return @"15 seconds ago.";
+        return [NSString stringWithFormat:@"%i seconds ago.", (int) interval];
     }
 }
 
