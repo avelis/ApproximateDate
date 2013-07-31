@@ -12,7 +12,13 @@
 @implementation NSDate (Approximate)
 
 - (NSString *)approximate:(NSDate *)date {
-    return @"Just moments ago.";
+    NSTimeInterval interval = [self timeIntervalSinceDate:date];
+    interval = floor(interval);
+    if(interval >= 0.0f && interval <= 5.0f) {
+        return @"Just moments ago.";
+    } else {
+        return @"X seconds ago.";
+    }
 }
 
 @end
