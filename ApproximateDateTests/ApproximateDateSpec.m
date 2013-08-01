@@ -62,6 +62,16 @@ describe(@"ApproximateDate", ^{
             });
         });
 
+        context(@"with a time difference more than an hour", ^{
+
+            it(@"should return 'Awhile ago.'", ^{
+                date = [[NSDate date] dateByAddingTimeInterval:-(100.0 * 60)];
+                systemUnderTest = [NSDate date];
+                NSString *value = [systemUnderTest approximate:date];
+                [[value should] matchPattern:@"Awhile ago." options:NSRegularExpressionCaseInsensitive];
+            });
+        });
+
     });
 });
 

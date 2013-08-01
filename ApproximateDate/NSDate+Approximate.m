@@ -17,8 +17,10 @@
         approximate = @"Just moments ago.";
     } else if(interval >= 5.0f && interval <= 60.0f) {
         approximate = [NSString stringWithFormat:@"%i seconds ago.", (int) interval];
-    } else {
+    } else if(interval >= 60.0f && interval <= (60.0f * 60.0f)) {
         approximate = [NSString stringWithFormat:@"%i minutes ago.", (int) floor(interval / 60)];
+    } else {
+        approximate = @"Awhile ago.";
     }
 
     return approximate;
