@@ -11,4 +11,4 @@ A NSDate category extension used to help create approximate string output accord
     ...
     NSDate *now = [NSDate date];
     //Variable approximate equals "Just moments ago".
-    NSString *approximate = [dateLessThanFiveSecondsAgo approximate:now];
+    NSString *approximate = [now approximate:dateLessThanFiveSecondsAgo];
